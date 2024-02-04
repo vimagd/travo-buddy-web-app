@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin collImg {
+  width: 100%;
+  height: 300px;
+  background-size: 100% 100%;
+  animation: slider 5s linear infinite;
+
+  @media only screen and (min-device-width: 768px) {
+    height: 500px;
+  }
+
+  @media only screen and (min-device-width: 1024px) {
+    height: 662px;
+  }
+
+  @media only screen and (min-device-width: 1440px) {
+    height: 696px;
+  }
+  @media only screen and (min-device-width: 2526px) {
+    height: 1324px;
+  }
+}
+
+@keyframes slider {
+  0% {
+    background-image: url("./assets/images/1.jpeg");
+  }
+  50% {
+    background-image: url("./assets/images/2.jpeg");
+  }
+  100% {
+    background-image: url("./assets/images/4.jpeg");
+  }
+}
+
+.collection-image {
+  @include collImg;
+}
+
+.travo-buddy-image {
+  width: 100%;
+  height: 300px;
+  background-size: 100% 100%;
+  background-image: url("./assets/images/6.jpeg");
+  @media only screen and (min-device-width: 768px) {
+    height: 500px;
+  }
+
+  @media only screen and (min-device-width: 1024px) {
+    height: 662px;
+  }
+
+  @media only screen and (min-device-width: 1440px) {
+    height: 696px;
+  }
+  @media only screen and (min-device-width: 2526px) {
+    height: 1324px;
+  }
+}
+
+.choose-us-image {
+  width: 100%;
+  height: 300px;
+  background-size: 100% 100%;
+  background-image: url("./assets/images/3.jpeg");
+  @media only screen and (min-device-width: 768px) {
+    height: 500px;
+  }
+
+  @media only screen and (min-device-width: 1024px) {
+    height: 662px;
+  }
+
+  @media only screen and (min-device-width: 1440px) {
+    height: 696px;
+  }
+  @media only screen and (min-device-width: 2526px) {
+    height: 1324px;
+  }
+}
+
+.about-us-image {
+  width: 100%;
+  height: 300px;
+  background-size: 100% 100%;
+  background-image: url("./assets/images/5.jpeg");
+  @media only screen and (min-device-width: 768px) {
+    height: 500px;
+  }
+
+  @media only screen and (min-device-width: 1024px) {
+    height: 662px;
+  }
+
+  @media only screen and (min-device-width: 1440px) {
+    height: 696px;
+  }
+  @media only screen and (min-device-width: 2526px) {
+    height: 1324px;
+  }
+}
+
+.main-section {
+  @media only screen and (min-device-width: 768px) {
+    padding: 0 60px;
+  }
+
+  @media only screen and (min-device-width: 1024px) {
+    padding: 0 100px;
+  }
+
+  @media only screen and (min-device-width: 1326px) {
+    padding: 0 235px;
+  }
+
+  @media only screen and (min-device-width: 1440px) {
+    padding: 0 270px;
+  }
+
+  @media only screen and (min-device-width: 2526px) {
+    padding: 0 420px;
+  }
+}
